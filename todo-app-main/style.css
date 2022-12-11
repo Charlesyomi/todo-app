@@ -1,0 +1,155 @@
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  /* PRIMARY */
+  --bright-blue: hsl(220, 98%, 61%);
+
+  /* DARK THEME */
+  --very-dark-desaturated-blue: hsl(235, 24%, 19%);
+  --light-grayish-blue: hsl(234, 39%, 85%);
+  --very-dark-blue: hsl(235, 21%, 11%);
+  --light-grayish-blue-hover: hsl(236, 33%, 92%);
+  --dark-grayish-blue: hsl(234, 11%, 52%);
+  --very-dark-grayish-blue: hsl(233, 14%, 35%);
+  --very-dark-grayish-blue-2: hsl(237, 14%, 26%);
+}
+/* body {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+} */
+
+body {
+  background-color: var(--very-dark-blue);
+}
+
+.text-white {
+  /* color: #fff; */
+}
+
+.todo-list {
+  list-style-type: decimal;
+}
+
+.visually-hidden {
+  /* THIS IS NOT A COMPLETE BLOCK OF CODE */
+  /* position: absolute; */
+}
+.completely-hidden {
+  /* THIS IS A PROBLEMATIC LINE OF CODE YOU SHOULD FINE A WAY TO ELIMINATE THE IMPORTANT */
+  display: none !important; /* this will overwrite display flex*/
+}
+
+.container {
+  width: 80%;
+  max-width: 1100px;
+  margin: auto;
+}
+h1 {
+  color: #fff;
+}
+
+header {
+  background-image: url("./images/bg-mobile-dark.jpg");
+}
+
+.todo-form {
+  margin: 2em auto;
+}
+.todo-form__container {
+  display: flex;
+}
+.todo-form__input {
+  flex: 1 1 auto;
+
+  padding: 1em;
+  border: 0;
+  border-radius: 0.4em;
+
+  background-color: var(--very-dark-desaturated-blue);
+  color: #fff;
+}
+
+.todo-list {
+  color: #fff;
+  background-color: var(--very-dark-desaturated-blue);
+
+  list-style-type: none;
+
+  border-radius: 0.4em;
+
+  margin: 2em auto;
+}
+
+.todo__item {
+  display: flex;
+
+  align-items: center;
+
+  padding: 2em;
+  /* margin-bottom: 1.5rem; */
+}
+
+.todo__item + .todo__item {
+  /* margin-top: 2em; */
+  border-top: 1px solid var(--light-grayish-blue);
+}
+
+.check-form {
+  order: -1;
+}
+
+.delete-todo-btn {
+  border: 0;
+  background-color: unset;
+
+  visibility: hidden;
+}
+
+.todo__item:hover .delete-todo-btn {
+  visibility: visible;
+}
+
+.todo__descp {
+  flex: 1 1 auto;
+  margin: auto 2em;
+}
+
+.sort-btn {
+  text-transform: capitalize;
+  cursor: pointer;
+  background-color: transparent;
+  border: none;
+
+  color: var(--light-grayish-blue);
+  font-weight: 600;
+}
+
+/* research on the states of a button */
+.sort-btn:hover,
+.sort-btn:focus,
+.sort-btn:active {
+  color: var(--bright-blue);
+}
+
+.sort-btns-container {
+  display: flex;
+  justify-content: space-around;
+
+  background-color: var(--very-dark-desaturated-blue);
+  border-radius: 0.4em;
+  padding: 2em;
+}
+/* WHEN CHANGING CLASSNAMES PLEASE ENSURE THEY ARE CHANGED WISELY IN THE ENTIRE WORKPLACE */
+
+/* BE CAREFUL WHEN CHANGING CSS CLASSNAMES AND ID NAMES SINCE THOSE NAMES ARE USED IN THE JAVASCRIPT FILE */
+
+.todo__descp--completed {
+  color: var(--light-grayish-blue);
+}

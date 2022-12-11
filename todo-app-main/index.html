@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+    <link rel="stylesheet" href="style.css" />
+
+    <title>Frontend Mentor | Todo app</title>
+
+    <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+    <style>
+      .attribution {
+        font-size: 11px;
+        text-align: center;
+      }
+      .attribution a {
+        color: hsl(228, 45%, 44%);
+      }
+    </style>
+  </head>
+  <body>
+    <div class="root-container">
+      <header>
+        <div class="container">
+          <h1>TODO</h1>
+        </div>
+      </header>
+      <form action="" class="todo-form" id="todo-form">
+        <div class="container todo-form__container" id="todo-form-container">
+          <input
+            type="text"
+            name=""
+            id="todo-input"
+            class="todo-form__input"
+            placeholder="Create a new todo..."
+          />
+          <!-- <input
+            type="button"
+            value="edit"
+            class="todo-form__edit .completely-hidden"
+            id="todo-edit"
+          /> -->
+          <!-- <input
+            type="submit"
+            value="submit"
+            class="todo-form__submit"
+            id="todo-submit"
+          /> -->
+        </div>
+      </form>
+      <!-- <div class="container list-container"> -->
+      <ul class="todo-list container" id="todo-list"></ul>
+      <!-- </div> -->
+      <div class="sort-btns-container container">
+        <button id="show-active" class="sort-btn">active</button>
+        <button id="show-completed" class="sort-btn">completed</button>
+        <button id="show-all" class="sort-btn">all</button>
+      </div>
+      <!-- Add dynamic number -->
+      <!-- items left All Active Completed Clear Completed Drag and drop to reorder
+      list -->
+      <!-- <div class="attribution">
+        Challenge by
+        <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
+          >Frontend Mentor</a
+        >. Coded by <a href="#">Your Name Here</a>.
+      </div> -->
+    </div>
+
+    <script src="script6.js" type="module"></script>
+  </body>
+</html>
