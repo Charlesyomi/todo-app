@@ -1,0 +1,4 @@
+Make the set Attributes function have error handling with throw and catch for cases where objects are not provided in the second argument
+Rewrite the updateLocalStorageStore and updateLocalStorage functions ---> change the way they are being updated
+Store the state also when the item is initialized
+add update as you type to support editing
